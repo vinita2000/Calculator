@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!---stylesheets-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>calculator</title>
+</head>
+<body>
+    <!----toggler-->
+    <header>
+        <button class="toggle" id="toggle" onclick="toggle()">Dark Mode</button>
+    </header>
+  <!---calculator -->
+  <!---id for javascript and class for css-->
+    <div class="container" id="container">
+
+        <div class="calculator" id="calculator">
+
+            <div id="result">
+                
+                <div id="output" class="output">
+                    <input class ="output-value" type="text" id="output-value"/>
+                   <!---<p id="output-value" class="output-value" >output</p>--> 
+                </div>
+            </div>
+
+            <div id="keyboard">
+                <button class="operator" id="clear" onclick="clr()">C</button>
+					<button class="operator" id="backspace" onclick="clr()">CE</button>
+					<button class="operator" value="%" onclick="input_val('%')">%</button>
+                    <button class="operator" value="/" onclick="input_val('+')">&#247;</button>
+                  
+					<button class="number" value="7" onclick="input_val('7')">7</button>
+					<button class="number" value="8" onclick="input_val('8')">8</button>
+                    <button class="number" value="9" onclick="input_val('9')">9</button>
+                    
+                    <button class="operator" value="*" onclick="input_val('*')">&times;</button>
+                    
+					<button class="number" value="4" onclick="input_val('4')">4</button>
+					<button class="number" value="5" onclick="input_val('5')">5</button>
+                    <button class="number" value="6" onclick="input_val('6')">6</button>
+                    
+                    <button class="operator" value="-" onclick="input_val('-')">-</button>
+                    
+					<button class="number" value="1" onclick="input_val('1')">1</button>
+					<button class="number" value="2" onclick="input_val('2')">2</button>
+                    <button class="number" value="3" onclick="input_val('3')">3</button>
+                    
+                    <button class="operator" value="+" onclick="input_val('+')">+</button>
+                    
+					<button class="empty" id="empty"></button>
+					<button class="number" value="0" onclick="input_val('0')">0</button>
+					<button class="empty" id="empty2"></button>
+					<button class="equal-to" id="=" onclick="solve()">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/*
+font-family: 'Roboto Mono', monospace;
+*/
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background: #eed4f5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    
+}
+/* header  section css */
+header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:50px;
+}
+
+/* toggler button css goes here */
+.toggle{
+
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0 , 0 , 0 , 0.3);
+    border: 1px solid #896b91;
+    background: #ab6dbd;
+    color:white;
+    width:240px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 15px;
+}
+.toggle:focus{
+    outline: 0!important;
+}
+
+/* css for body dark mode goes here */
+.dark-mode{
+
+    background-color: #1b0d1f;
+    color:#efc8fa;
+}
+/* calculator container css goes here */
+.container{
+    margin-top:50px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.calculator{
+    width: 320px;
+    height: 520px;
+    display:inline-block;
+    box-shadow:  0px 2px 10px rgba(43, 21, 38, 0.3);
+    border-radius: 10px;
+    
+   
+}
+/* dark mode theme for calculator container css goes here */ 
+.cal-dark{
+    width: 320px;
+    height: 520px;
+    display:inline-block;
+    box-shadow:  0px 2px 20px rgba(243, 179, 229, 0.3);
+    border-radius: 10px;
+    
+}
+
+@media(min-width: 768px){
+    .calculator, .cal-dark{ 
+        width:400px;
+        height: 600px;
+       
+    }
+
+    
+}
+
+/* sections of calculator css goes here */
+#result{
+    height: 150px;
+}
+#keyboard{
+    height: 400px;
+}
+.history{
+    text-align:right;
+    padding-right: 15px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.output{
+    text-align:right;
+    padding-right: 15px;
+    font-size: 25px;
+    
+}
+
+/* output text css goes here */
+.output-value{
+    padding: 20px;
+    margin-top: 40px;
+    color:#794588;
+    background: #eed4f5;
+    border: none;
+    font-size:large;
+    font-weight: 600;
+    text-align: right;
+    
+}
+.output-value-dark{
+    color:#e1acf0;
+    background:#1b0d1f;
+}
+/* buttons or keys css goes here */
+.number, .operator , .empty, .equal-to{
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.number:focus, .operator:focus , .empty:focus, .equal-to:focus{
+    outline: 0!important;
+}
+
+
+@media(min-width: 768px){
+    .number, .operator , .empty, .equal-to{
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        outline: none;
+    }
+}
+
+
+.number{
+    background-color: #e1a1f3;
+    color:#36003b;
+    border: none;
+    box-shadow:  0px 2px 10px rgba(43, 21, 38, 0.3);
+    font-size: medium;
+}
+
+.empty{
+    background-color: #eed4f5;
+    border: none;
+}
+.empty-dark{
+    background-color:#1b0d1f ;
+    border: none;
+}
+.operator{
+    background-color: #cf62bd;
+    color:#fdf5fc;
+    border: none;
+    box-shadow:  0px 2px 10px rgba(43, 21, 38, 0.3);
+    font-size: medium;
+}
+.equal-to{
+    background-color: #8c3c9c;
+    color:#fdf5fc;
+    border: none;
+    box-shadow:  0px 2px 10px rgba(43, 21, 38, 0.3);
+    font-size: medium;
+}
+/* hover effects css */
+.number:hover{
+    
+    background-color: #cf62bd;
+}
+.operator:hover{
+    background: #8c3c9c;
+}
+.equal-to:hover{
+    background:#cf62bd;
+}
